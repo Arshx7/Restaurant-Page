@@ -1,13 +1,15 @@
 export function menu() {
     const content = document.querySelector("#content");
 
-    const heading1 = document.createElement("h1");
+    const heading = document.createElement("h1");
     const paragraph = document.createElement("p");
     
-    heading1.textContent = "Our Menu";
+    heading.textContent = "Our Menu";
+    heading.classList.add("menuHeading");
     paragraph.textContent = "Explore our diverse selection of delicious dishes, crafted with care to delight your palate.";
+    paragraph.classList.add("menuPara");
 
-    content.appendChild(heading1);
+    content.appendChild(heading);
     content.appendChild(paragraph);
 
     const categoryMap = {};
